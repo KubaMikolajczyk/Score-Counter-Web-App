@@ -1,3 +1,7 @@
+html, body{
+  height: 100%;
+}
+
 .winner{
   color: green;
 }
@@ -6,3 +10,25 @@
   font-size: 4em;
   text-align: center;
 }
+
+.container{
+  height: 90%;
+}
+
+div.row{
+  height: 100%
+}
+
+
+.col-sm{
+  background: pink;
+  border: 1px solid blue;
+  height:100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  }
