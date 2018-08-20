@@ -7,6 +7,10 @@ var p2MinusButton = document.querySelector("#p2minus")
 var resetButton = document.querySelector("#resetScore");
 var winningCondition = document.querySelector("#winningCondition[type='number']");
 
+// players columns
+var firstPlayerColumn = document.querySelector("#p1column");
+var secondPlayerColumn = document.querySelector("#p2column");
+
 
 // display selection
 var winNumber = document.querySelector("#winNumber");
@@ -71,6 +75,18 @@ function minusScore(display, score){
     return score;
   }
 }
+
+function hidingColumn(option) {
+    if(option === 1){
+      firstPlayerColumn.style.display = "block";
+      secondPlayerColumn.style.display = "none";
+    } else if(option === 2){
+      firstPlayerColumn.style.display = "block";
+      secondPlayerColumn.style.display = "block";
+    }
+}
+
+
 
 resetButton.addEventListener("click", function(){
   p1Score = 0;
