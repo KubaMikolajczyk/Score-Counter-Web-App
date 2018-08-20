@@ -80,10 +80,10 @@ minusButton.addEventListener("click", function(){
 
 var firstPlayer = new Player(1, p1AddButton, p1MinusButton, p1Display, 0);
 var secondPlayer = new Player(2, p2AddButton, p2MinusButton, p2Display, 0);
-var thirdPlayer = new Player(2, p3AddButton, p3MinusButton, p3Display, 0);
-var fourthPlayer = new Player(2, p4AddButton, p4MinusButton, p4Display, 0);
-var fifthPlayer = new Player(2, p5AddButton, p5MinusButton, p5Display, 0);
-var sixthPlayer = new Player(2, p6AddButton, p6MinusButton, p6Display, 0);
+var thirdPlayer = new Player(3, p3AddButton, p3MinusButton, p3Display, 0);
+var fourthPlayer = new Player(4, p4AddButton, p4MinusButton, p4Display, 0);
+var fifthPlayer = new Player(5, p5AddButton, p5MinusButton, p5Display, 0);
+var sixthPlayer = new Player(6, p6AddButton, p6MinusButton, p6Display, 0);
 
 function addScore(display, score){
   if(!gameOver){
