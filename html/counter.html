@@ -18,14 +18,14 @@
     <!-- players container -->
     <div class="container">
       <div class="row">
-          <div class="col-sm" id="p1column">
+          <div class="col-sm col-player" id="p1column">
             <div class="centered">
               <h2 class="scoreNumber"><span id="p1Display">0</span></h2>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p1add"><i class="fas fa-plus"></i></button>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p1minus"><i class="fas fa-minus"></i></button>
             </div>
           </div>
-          <div class="col-sm" id="p2column">
+          <div class="col-sm col-player" id="p2column">
             <div class="centered">
               <h2 class="scoreNumber"><span id="p2Display">0</span></h2>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p2add"><i class="fas fa-plus"></i></button>
@@ -35,12 +35,27 @@
       </div>
     </div> <!-- end of container -->
 
+    <!-- game container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <p>Playing to: <span id="winNumber">5</span></p>
+          <input type="number" id="winningCondition">
+        </div>
+        <div class="col-sm">
+          <p>Players amount: <span id="winNumber">2</span></p>
+          <button type="button"  onclick="hidingColumn(1)">1</button>
+          <button type="button"  onclick="hidingColumn(2)">2</button>
+        </div>
+        <div class="col-sm">
+          <button type="button" id="resetScore">Reset</button>
+        </div>
+      </div> <!-- end of container -->
 
-    <p>Playing to: <span id="winNumber">5</span></p>
-    <input type="number" id="winningCondition">
-    <p>Players amount: <span id="winNumber">2</span></p>
-    <input type="number" id="playerAmmount">
-    <button type="button" id="resetScore">Reset</button>
+
+
+    </div>
+
 
 
     <!-- jquery, bootstrap, popper js connection -->
