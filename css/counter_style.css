@@ -23,8 +23,9 @@ html, body{
 
 .col-player{
   background: pink;
-  border: 1px solid blue;
+  border: 10px solid white;
   height:100%;
+  border-radius: 25px;
 }
 
 .halfSize{
