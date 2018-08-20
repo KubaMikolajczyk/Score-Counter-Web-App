@@ -10,6 +10,10 @@ var winningCondition = document.querySelector("#winningCondition[type='number']"
 // players columns
 var firstPlayerColumn = document.querySelector("#p1column");
 var secondPlayerColumn = document.querySelector("#p2column");
+var thirdPlayerColumn = document.querySelector("#p3column");
+var fourthPlayerColumn = document.querySelector("#p4column");
+var fifthPlayerColumn = document.querySelector("#p5column");
+var sixthPlayerColumn = document.querySelector("#p6column");
 
 
 // display selection
@@ -80,9 +84,45 @@ function hidingColumn(option) {
     if(option === 1){
       firstPlayerColumn.style.display = "block";
       secondPlayerColumn.style.display = "none";
+      thirdPlayerColumn.style.display = "none";
+      fourthPlayerColumn.style.display = "none";
+      fifthPlayerColumn.style.display = "none";
+      sixthPlayerColumn.style.display = "none";
     } else if(option === 2){
       firstPlayerColumn.style.display = "block";
       secondPlayerColumn.style.display = "block";
+      thirdPlayerColumn.style.display = "none";
+      fourthPlayerColumn.style.display = "none";
+      fifthPlayerColumn.style.display = "none";
+      sixthPlayerColumn.style.display = "none";
+    } else if(option === 3){
+      firstPlayerColumn.style.display = "block";
+      secondPlayerColumn.style.display = "block";
+      thirdPlayerColumn.style.display = "block";
+      fourthPlayerColumn.style.display = "none";
+      fifthPlayerColumn.style.display = "none";
+      sixthPlayerColumn.style.display = "none";
+    } else if(option === 4){
+      firstPlayerColumn.style.display = "block";
+      secondPlayerColumn.style.display = "block";
+      thirdPlayerColumn.style.display = "block";
+      fourthPlayerColumn.style.display = "block";
+      fifthPlayerColumn.style.display = "none";
+      sixthPlayerColumn.style.display = "none";
+    } else if(option === 5){
+      firstPlayerColumn.style.display = "block";
+      secondPlayerColumn.style.display = "block";
+      thirdPlayerColumn.style.display = "block";
+      fourthPlayerColumn.style.display = "block";
+      fifthPlayerColumn.style.display = "block";
+      sixthPlayerColumn.style.display = "none";
+    } else if(option === 6){
+      firstPlayerColumn.style.display = "block";
+      secondPlayerColumn.style.display = "block";
+      thirdPlayerColumn.style.display = "block";
+      fourthPlayerColumn.style.display = "block";
+      fifthPlayerColumn.style.display = "block";
+      sixthPlayerColumn.style.display = "block";
     }
 }
 

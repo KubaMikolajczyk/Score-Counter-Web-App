@@ -17,6 +17,7 @@
 
     <!-- players container -->
     <div class="container">
+      <!-- 1st row -->
       <div class="row">
           <div class="col-sm col-player" id="p1column">
             <div class="centered">
@@ -30,6 +31,37 @@
               <h2 class="scoreNumber"><span id="p2Display">0</span></h2>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p2add"><i class="fas fa-plus"></i></button>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p2minus"><i class="fas fa-minus"></i></button>
+            </div>
+          </div>
+          <div class="col-sm col-player" id="p3column">
+            <div class="centered">
+              <h2 class="scoreNumber"><span id="p3Display">0</span></h2>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p3add"><i class="fas fa-plus"></i></button>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p3minus"><i class="fas fa-minus"></i></button>
+            </div>
+          </div>
+      </div>
+      <!-- 2nd row -->
+      <div class="row">
+          <div class="col-sm col-player" id="p4column">
+            <div class="centered">
+              <h2 class="scoreNumber"><span id="p4Display">0</span></h2>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p4add"><i class="fas fa-plus"></i></button>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p4minus"><i class="fas fa-minus"></i></button>
+            </div>
+          </div>
+          <div class="col-sm col-player" id="p5column">
+            <div class="centered">
+              <h2 class="scoreNumber"><span id="p5Display">0</span></h2>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p5add"><i class="fas fa-plus"></i></button>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p5minus"><i class="fas fa-minus"></i></button>
+            </div>
+          </div>
+          <div class="col-sm col-player" id="p6column">
+            <div class="centered">
+              <h2 class="scoreNumber"><span id="p6Display">0</span></h2>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p6add"><i class="fas fa-plus"></i></button>
+              <button type="button" class="btn btn-default btn-circle btn-xl" id="p6minus"><i class="fas fa-minus"></i></button>
             </div>
           </div>
       </div>
@@ -46,6 +78,10 @@
           <p>Players amount: <span id="winNumber">2</span></p>
           <button type="button"  onclick="hidingColumn(1)">1</button>
           <button type="button"  onclick="hidingColumn(2)">2</button>
+          <button type="button"  onclick="hidingColumn(3)">3</button>
+          <button type="button"  onclick="hidingColumn(4)">4</button>
+          <button type="button"  onclick="hidingColumn(5)">5</button>
+          <button type="button"  onclick="hidingColumn(6)">6</button>
         </div>
         <div class="col-sm">
           <button type="button" id="resetScore">Reset</button>
