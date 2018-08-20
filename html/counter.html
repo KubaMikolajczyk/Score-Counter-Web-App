@@ -15,33 +15,31 @@
   </head>
   <body>
 
+    <!-- players container -->
     <div class="container">
-
       <div class="row">
-          <div class="col-sm">
+          <div class="col-sm" id="p1column">
             <div class="centered">
               <h2 class="scoreNumber"><span id="p1Display">0</span></h2>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p1add"><i class="fas fa-plus"></i></button>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p1minus"><i class="fas fa-minus"></i></button>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-sm" id="p2column">
             <div class="centered">
               <h2 class="scoreNumber"><span id="p2Display">0</span></h2>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p2add"><i class="fas fa-plus"></i></button>
               <button type="button" class="btn btn-default btn-circle btn-xl" id="p2minus"><i class="fas fa-minus"></i></button>
             </div>
           </div>
-
       </div>
-    </div>
+    </div> <!-- end of container -->
 
 
     <p>Playing to: <span id="winNumber">5</span></p>
-
     <input type="number" id="winningCondition">
-
-
+    <p>Players amount: <span id="winNumber">2</span></p>
+    <input type="number" id="playerAmmount">
     <button type="button" id="resetScore">Reset</button>
 
 
