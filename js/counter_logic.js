@@ -12,34 +12,41 @@ var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
 
 // global variables
-var p1Score = 0;
-var p2Score = 0;
 var gameOver = false;
 var winningScore = 5;
 
-p1AddButton.addEventListener("click", function(){
+
+class Player{
+  constructor(pNumber, button, display, score){
+  this.pNumber = pNumber;
+  this.score = score;
+
+button.addEventListener("click", function(){
+  score = addScore(display, score);
+});
+}
+}
+
+var firstPlayer = new Player(1, p1AddButton, p1Display, 0);
+var secondPlayer = new Player(2, p2AddButton, p2Display, 0);
+
+function addScore(display, score){
   if(!gameOver){
-    p1Score++;
-    if(p1Score === winningScore){
-      p1Display.classList.add("winner");
+    if(score){
+      score++;
+      console.log(score);
+    } else{
+      score = 1;
+      console.log(score);
+    }
+    if(score === winningScore){
+      display.classList.add("winner");
       gameOver = true;
     }
-    p1Display.textContent = p1Score;
+    display.textContent = score;
+    return score;
   }
-
-});
-
-p2AddButton.addEventListener("click", function(){
-  if(!gameOver){
-    p2Score++;
-    if(p2Score === winningScore){
-      p2Display.classList.add("winner");
-      gameOver = true;
-    }
-    p2Display.textContent = p2Score;
-  }
-
-});
+}
 
 resetButton.addEventListener("click", function(){
   p1Score = 0;
