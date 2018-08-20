@@ -3,7 +3,7 @@ html, body{
 }
 
 .winner{
-  color: green;
+  color: #73A580;
 }
 
 .scoreNumber{
@@ -21,7 +21,7 @@ html, body{
 }
 
 .col-player{
-  background: pink;
+  background: #FCC6BA;
   border: 10px solid white;
   height:100%;
   border-radius: 25px;
@@ -53,6 +53,10 @@ p{
   font-family: 'Raleway', sans-serif;
 }
 
+#winNumber{
+  font-weight: 700;
+}
+
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
@@ -62,4 +66,9 @@ p{
   border-radius: 35px;
   margin: 0px 5px 0px 5px;
   background: white;
+  color: #DD614A;
   }
+
+.btn-outline-danger{
+  border: 1px solid #DD614A;
+}
