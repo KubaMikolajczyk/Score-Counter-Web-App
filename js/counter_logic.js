@@ -131,6 +131,7 @@ function hidingColumn(option) {
       sixthPlayerColumn.style.display = "none";
 
       firstRow.classList.remove("halfSize")
+      secondRow.classList.remove("halfSize");
       firstRow.classList.add("fullSize");
 
     } else if(option === 2){
@@ -142,6 +143,7 @@ function hidingColumn(option) {
       sixthPlayerColumn.style.display = "none";
 
       firstRow.classList.remove("halfSize")
+      secondRow.classList.remove("halfSize");
       firstRow.classList.add("fullSize");
 
     } else if(option === 3){
@@ -153,6 +155,7 @@ function hidingColumn(option) {
       sixthPlayerColumn.style.display = "none";
 
       firstRow.classList.remove("halfSize")
+      secondRow.classList.remove("halfSize");
       firstRow.classList.add("fullSize");
 
     } else if(option === 4){
