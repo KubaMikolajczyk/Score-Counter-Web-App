@@ -1,8 +1,17 @@
+
+// buttons and inputs selection
 var p1AddButton = document.querySelector("#p1add");
 var p2AddButton = document.querySelector("#p2add")
 var resetButton = document.querySelector("#resetScore")
+var winningCondition = document.querySelector("#winningCondition[type='number']")
+
+
+// display selection
+var winNumber = document.querySelector("#winNumber")
 var p1Display = document.querySelector("#p1Display")
 var p2Display = document.querySelector("#p2Display")
+
+// global variables
 var p1Score = 0;
 var p2Score = 0;
 var gameOver = false;
@@ -42,3 +51,8 @@ resetButton.addEventListener("click", function(){
   gameOver = false;
 
 });
+
+winningCondition.addEventListener("change", function(){
+  winNumber.textContent = winningCondition.value;
+  winningScore = Number(winningCondition.value);
+})
