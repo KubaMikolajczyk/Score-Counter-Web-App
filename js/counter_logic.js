@@ -1,7 +1,9 @@
 
 // buttons and inputs selection
 var p1AddButton = document.querySelector("#p1add");
+var p1MinusButton = document.querySelector("#p1minus")
 var p2AddButton = document.querySelector("#p2add");
+var p2MinusButton = document.querySelector("#p2minus")
 var resetButton = document.querySelector("#resetScore");
 var winningCondition = document.querySelector("#winningCondition[type='number']");
 
@@ -17,18 +19,22 @@ var winningScore = 5;
 
 
 class Player{
-  constructor(pNumber, button, display, score){
+  constructor(pNumber, addButton, minusButton, display, score){
   this.pNumber = pNumber;
   this.score = score;
 
-button.addEventListener("click", function(){
+addButton.addEventListener("click", function(){
   score = addScore(display, score);
-});
-}
+    });
+
+minusButton.addEventListener("click", function(){
+  score = minusScore(display, score)
+    });
+  }
 }
 
-var firstPlayer = new Player(1, p1AddButton, p1Display, 0);
-var secondPlayer = new Player(2, p2AddButton, p2Display, 0);
+var firstPlayer = new Player(1, p1AddButton, p1MinusButton, p1Display, 0);
+var secondPlayer = new Player(2, p2AddButton, p2MinusButton, p2Display, 0);
 
 function addScore(display, score){
   if(!gameOver){
@@ -37,6 +43,24 @@ function addScore(display, score){
       console.log(score);
     } else{
       score = 1;
+      console.log(score);
+    }
+    if(score === winningScore){
+      display.classList.add("winner");
+      gameOver = true;
+    }
+    display.textContent = score;
+    return score;
+  }
+}
+
+function minusScore(display, score){
+  if(!gameOver){
+    if(score){
+      score--;
+      console.log(score);
+    } else{
+      score = 0;
       console.log(score);
     }
     if(score === winningScore){
