@@ -43,9 +43,15 @@ html, body{
   }
 
   .justify-to-right{
-    padding-top: 3%;
-    padding-left: 60%;
+    margin-top: 1.4rem;
+    margin-left: 12rem;
+    font-family: 'Raleway', sans-serif;
   }
+
+p{
+  margin-bottom: 0.2rem;
+  font-family: 'Raleway', sans-serif;
+}
 
 .btn-circle.btn-xl {
   width: 70px;

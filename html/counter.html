@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Player Score Counter</title>
 
+    <!-- custom font connection -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
     <!-- font awesome connection - glyphicons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -76,13 +79,17 @@
           <input type="number" id="winningCondition">
         </div>
         <div class="col-sm">
-          <p>Players amount:</p>
-          <button type="button"  onclick="hidingColumn(1)">1</button>
-          <button type="button"  onclick="hidingColumn(2)">2</button>
-          <button type="button"  onclick="hidingColumn(3)">3</button>
-          <button type="button"  onclick="hidingColumn(4)">4</button>
-          <button type="button"  onclick="hidingColumn(5)">5</button>
-          <button type="button"  onclick="hidingColumn(6)">6</button>
+          <div class="centered">
+            <p id="pAmountText">Players amount:</p>
+            <div class="btn-group" role="group" aria-label="playerChoice">
+              <button type="button" class="btn btn-outline-success" onclick="hidingColumn(1)">1</button>
+              <button type="button" class="btn btn-outline-success" onclick="hidingColumn(2)">2</button>
+              <button type="button" class="btn btn-outline-success" onclick="hidingColumn(3)">3</button>
+              <button type="button" class="btn btn-outline-success" onclick="hidingColumn(4)">4</button>
+              <button type="button" class="btn btn-outline-success" onclick="hidingColumn(5)">5</button>
+              <button type="button" class="btn btn-outline-success" onclick="hidingColumn(6)">6</button>
+            </div>
+          </div>
         </div>
         <div class="col-sm">
           <div class="justify-to-right">
