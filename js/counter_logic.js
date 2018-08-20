@@ -53,6 +53,6 @@ resetButton.addEventListener("click", function(){
 });
 
 winningCondition.addEventListener("change", function(){
-  winNumber.textContent = winningCondition.value;
-  winningScore = Number(winningCondition.value);
+  winNumber.textContent = this.value;
+  winningScore = Number(this.value);
 })
