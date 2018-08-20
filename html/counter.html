@@ -18,7 +18,7 @@
     <!-- players container -->
     <div class="container">
       <!-- 1st row -->
-      <div class="row">
+      <div class="row" id="firstRow">
           <div class="col-sm col-player" id="p1column">
             <div class="centered">
               <h2 class="scoreNumber"><span id="p1Display">0</span></h2>
@@ -42,7 +42,7 @@
           </div>
       </div>
       <!-- 2nd row -->
-      <div class="row">
+      <div class="row" id="secondRow">
           <div class="col-sm col-player" id="p4column">
             <div class="centered">
               <h2 class="scoreNumber"><span id="p4Display">0</span></h2>
@@ -75,7 +75,7 @@
           <input type="number" id="winningCondition">
         </div>
         <div class="col-sm">
-          <p>Players amount: <span id="winNumber">2</span></p>
+          <p>Players amount:</p>
           <button type="button"  onclick="hidingColumn(1)">1</button>
           <button type="button"  onclick="hidingColumn(2)">2</button>
           <button type="button"  onclick="hidingColumn(3)">3</button>

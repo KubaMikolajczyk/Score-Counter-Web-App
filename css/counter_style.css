@@ -16,15 +16,23 @@ html, body{
   height: 90%;
 }
 
-div.row{
+/* div.row{
   height: 100%
-}
+} */
 
 
 .col-player{
   background: pink;
   border: 1px solid blue;
   height:100%;
+}
+
+.halfSize{
+  height: 50%;
+}
+
+.fullSize{
+  height: 100%;
 }
 
 .centered {

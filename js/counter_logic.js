@@ -15,6 +15,18 @@ var fourthPlayerColumn = document.querySelector("#p4column");
 var fifthPlayerColumn = document.querySelector("#p5column");
 var sixthPlayerColumn = document.querySelector("#p6column");
 
+// rows
+var firstRow = document.querySelector("#firstRow");
+var secondRow = document.querySelector("#secondRow");
+
+
+// initial display
+firstRow.classList.add("fullSize");
+secondPlayerColumn.style.display = "none";
+thirdPlayerColumn.style.display = "none";
+fourthPlayerColumn.style.display = "none";
+fifthPlayerColumn.style.display = "none";
+sixthPlayerColumn.style.display = "none";
 
 // display selection
 var winNumber = document.querySelector("#winNumber");
@@ -88,6 +100,10 @@ function hidingColumn(option) {
       fourthPlayerColumn.style.display = "none";
       fifthPlayerColumn.style.display = "none";
       sixthPlayerColumn.style.display = "none";
+
+      firstRow.classList.remove("halfSize")
+      firstRow.classList.add("fullSize");
+
     } else if(option === 2){
       firstPlayerColumn.style.display = "block";
       secondPlayerColumn.style.display = "block";
@@ -95,6 +111,10 @@ function hidingColumn(option) {
       fourthPlayerColumn.style.display = "none";
       fifthPlayerColumn.style.display = "none";
       sixthPlayerColumn.style.display = "none";
+
+      firstRow.classList.remove("halfSize")
+      firstRow.classList.add("fullSize");
+
     } else if(option === 3){
       firstPlayerColumn.style.display = "block";
       secondPlayerColumn.style.display = "block";
@@ -102,6 +122,10 @@ function hidingColumn(option) {
       fourthPlayerColumn.style.display = "none";
       fifthPlayerColumn.style.display = "none";
       sixthPlayerColumn.style.display = "none";
+
+      firstRow.classList.remove("halfSize")
+      firstRow.classList.add("fullSize");
+
     } else if(option === 4){
       firstPlayerColumn.style.display = "block";
       secondPlayerColumn.style.display = "block";
@@ -109,6 +133,11 @@ function hidingColumn(option) {
       fourthPlayerColumn.style.display = "block";
       fifthPlayerColumn.style.display = "none";
       sixthPlayerColumn.style.display = "none";
+
+      firstRow.classList.remove("fullSize")
+      firstRow.classList.add("halfSize");
+      secondRow.classList.add("halfSize");
+
     } else if(option === 5){
       firstPlayerColumn.style.display = "block";
       secondPlayerColumn.style.display = "block";
@@ -116,6 +145,11 @@ function hidingColumn(option) {
       fourthPlayerColumn.style.display = "block";
       fifthPlayerColumn.style.display = "block";
       sixthPlayerColumn.style.display = "none";
+
+      firstRow.classList.remove("fullSize")
+      firstRow.classList.add("halfSize");
+      secondRow.classList.add("halfSize");
+
     } else if(option === 6){
       firstPlayerColumn.style.display = "block";
       secondPlayerColumn.style.display = "block";
@@ -123,6 +157,11 @@ function hidingColumn(option) {
       fourthPlayerColumn.style.display = "block";
       fifthPlayerColumn.style.display = "block";
       sixthPlayerColumn.style.display = "block";
+
+      firstRow.classList.remove("fullSize")
+      firstRow.classList.add("halfSize");
+      secondRow.classList.add("halfSize");
+
     }
 }
 
