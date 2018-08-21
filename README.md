@@ -22,7 +22,7 @@ Counter can keep with up to six players.
 <br>
 
 
-Upon reaching the final score - you cant add points anymore to any user.
+You can set your custom final point - by default its 5. Upon reaching the final score - you cant add points anymore to any user.
 ![counter3](https://raw.githubusercontent.com/KubaMikolajczyk/Score-Counter-Web-App/master/jpg/presentation3.jpg)
 
 
@@ -31,13 +31,7 @@ Upon reaching the final score - you cant add points anymore to any user.
 <br>
 
 
-You can set your custom final point - by default its 5.
+To start again hit reset button.
 ![counter4](https://raw.githubusercontent.com/KubaMikolajczyk/Score-Counter-Web-App/master/jpg/presentation4.jpg)
 
-<br>
-<br>
-<br>
-
-
-To start again hit reset button.
-![counter5](https://raw.githubusercontent.com/KubaMikolajczyk/Score-Counter-Web-App/master/jpg/presentation5.jpg)
+Thank you.
