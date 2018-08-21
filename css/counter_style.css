@@ -1,9 +1,10 @@
 html, body{
   height: 100%;
+  background-color: #FFFFFF;
 }
 
 .winner{
-  color: #DD614A;
+  color: #1E4F2D;
   font-size: 1.3em;
 }
 
@@ -17,12 +18,12 @@ html, body{
   height: 90%;
 }
 
-.cont-small{
+.container.cont-small{
   height: 10%;
 }
 
 .col-player{
-  background: #FCC6BA;
+  background: #BCDDA4;
   border: 10px solid white;
   height:100%;
   border-radius: 25px;
@@ -52,10 +53,17 @@ html, body{
 p{
   margin-bottom: 0.2rem;
   font-family: 'Raleway', sans-serif;
+  color: #1E4F2D;
 }
 
 #winNumber{
   font-weight: 700;
+}
+
+#winningCondition{
+  border: 1px solid #1E4F2D;
+  border-radius: 45px;
+  height: 40px;
 }
 
 .btn-circle.btn-xl {
@@ -67,9 +75,9 @@ p{
   border-radius: 35px;
   margin: 0px 5px 0px 5px;
   background: white;
-  color: #DD614A;
+  color: #589E64;
   }
 
-.btn-outline-danger{
-  border: 1px solid #DD614A;
+.btn-outline-success{
+  border: 1px solid #1E4F2D;
 }
