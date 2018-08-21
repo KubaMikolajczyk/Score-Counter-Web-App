@@ -68,12 +68,12 @@ class Player{
   this.pNumber = pNumber;
   this.score = score;
 
-addButton.addEventListener("click", function(){
-  score = addScore(display, score);
+addButton.addEventListener("click", () =>{
+  this.score = addScore(display, this.score);
     });
 
-minusButton.addEventListener("click", function(){
-  score = minusScore(display, score)
+minusButton.addEventListener("click", () =>{
+  this.score = minusScore(display, this.score)
     });
   }
 }
@@ -87,12 +87,7 @@ var sixthPlayer = new Player(6, p6AddButton, p6MinusButton, p6Display, 0);
 
 function addScore(display, score){
   if(!gameOver){
-    if(score){
       score++;
-      console.log(score);
-    } else{
-      score = 1;
-      console.log(score);
     }
     if(score === winningScore){
       display.classList.add("winner");
@@ -101,16 +96,10 @@ function addScore(display, score){
     display.textContent = score;
     return score;
   }
-}
 
 function minusScore(display, score){
   if(!gameOver){
-    if(score){
       score--;
-      console.log(score);
-    } else{
-      score = 0;
-      console.log(score);
     }
     if(score === winningScore){
       display.classList.add("winner");
@@ -119,7 +108,6 @@ function minusScore(display, score){
     display.textContent = score;
     return score;
   }
-}
 
 function hidingColumn(option) {
     if(option === 1){
@@ -213,6 +201,12 @@ resetButton.addEventListener("click", function(){
   p4Display.classList.remove("winner");
   p5Display.classList.remove("winner");
   p6Display.classList.remove("winner");
+  firstPlayer.score = 0;
+  secondPlayer.score = 0;
+  thirdPlayer.score = 0;
+  fourthPlayer.score = 0;
+  fifthPlayer.score = 0;
+  sixthPlayer.score = 0;
   gameOver = false;
 
 });
